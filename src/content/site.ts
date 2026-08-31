@@ -84,3 +84,12 @@ export const temporaryAboutImage = {
   src: 'https://images.unsplash.com/photo-1752751975167-feba23828ae9?auto=format&fit=crop&w=1200&q=85',
   source: 'Unsplash — Declan Sun',
 } as const
+
+export const contactContent = {
+  eyebrow: 'Contato',
+  title: 'Vamos conversar sobre o seu projeto?',
+  description:
+    'Solicite um orçamento, apresente uma necessidade ou converse com a El Shay sobre uma solução integrada para o seu empreendimento.',
+  whatsAppLabel: 'Fale pelo WhatsApp',
+  whatsAppUrl: null as string | null,
+} as const

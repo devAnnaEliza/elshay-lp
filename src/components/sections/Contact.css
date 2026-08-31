@@ -1,0 +1,112 @@
+.contact {
+  padding: 4.5rem 0;
+  background: var(--color-background);
+}
+
+.contact__layout {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.contact__copy,
+.contact__action {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+
+.contact__layout.is-visible .contact__copy,
+.contact__layout.is-visible .contact__action {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact__action {
+  display: flex;
+  min-height: 15.5rem;
+  padding: 1.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgb(200 169 110 / 18%);
+  background: rgb(200 169 110 / 3%);
+}
+
+.contact__copy > p:last-child {
+  max-width: 33rem;
+  margin: 1.75rem 0 0;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.contact__action > p {
+  margin: 0 0 0.75rem;
+  color: rgb(200 169 110 / 60%);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.contact__action h3 {
+  max-width: 20rem;
+  margin: 0 0 1.5rem;
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.contact__cta {
+  display: inline-flex;
+  min-height: 3.25rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: var(--color-background);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 200ms ease;
+}
+
+a.contact__cta:hover,
+a.contact__cta:focus-visible {
+  background: var(--color-accent-hover);
+}
+
+.contact__cta--pending {
+  cursor: default;
+}
+
+.whatsapp-pending-message {
+  margin: 0.75rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 48rem) {
+  .contact__action {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .contact {
+    padding: 5.5rem 0;
+  }
+
+  .contact__layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(3rem, 5vw, 5.5rem);
+  }
+
+  .contact__action {
+    min-height: 17.5rem;
+  }
+}
