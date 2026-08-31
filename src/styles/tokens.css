@@ -1,0 +1,25 @@
+:root {
+  --color-background: #0f0f0d;
+  --color-surface: #0c0c0a;
+  --color-surface-raised: #141410;
+  --color-foreground: #f0ece3;
+  --color-foreground-soft: #e8e2d5;
+  --color-text-muted: #706a5e;
+  --color-accent: #c8a96e;
+  --color-accent-hover: #dbbe88;
+  --color-border: rgb(200 169 110 / 15%);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+
+  --content-width: 80rem;
+  --page-gutter: 1.5rem;
+  --focus-ring: 0 0 0 3px rgb(200 169 110 / 45%);
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --page-gutter: 3rem;
+  }
+}

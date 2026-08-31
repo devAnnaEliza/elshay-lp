@@ -1,0 +1,7 @@
+# Local references
+.reference/
+.vscode/
+
+# Local dependencies and build output
+node_modules/
+dist/
