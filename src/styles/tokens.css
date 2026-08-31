@@ -5,6 +5,8 @@
   --color-foreground: #f0ece3;
   --color-foreground-soft: #e8e2d5;
   --color-text-muted: #706a5e;
+  --color-text-navigation: #a8a090;
+  --color-text-hero: #a39a8d;
   --color-accent: #c8a96e;
   --color-accent-hover: #dbbe88;
   --color-border: rgb(200 169 110 / 15%);
@@ -13,7 +15,7 @@
   --font-body: 'DM Sans', system-ui, sans-serif;
   --font-mono: 'DM Mono', ui-monospace, monospace;
 
-  --content-width: 80rem;
+  --content-width: 88rem;
   --page-gutter: 1.5rem;
   --focus-ring: 0 0 0 3px rgb(200 169 110 / 45%);
 }
