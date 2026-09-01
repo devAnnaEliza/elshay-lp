@@ -4,9 +4,6 @@ import './Hero.css'
 export function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-title">
-      <div className="hero__backdrop" aria-hidden="true" />
-      <div className="hero__accent-line" aria-hidden="true" />
-
       <div className="hero__content">
         <div className="hero__copy">
           <p className="hero__eyebrow">

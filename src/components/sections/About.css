@@ -1,7 +1,3 @@
-.about {
-  background: var(--color-background);
-}
-
 .about__layout {
   display: grid;
   gap: 4rem;

@@ -1,5 +1,6 @@
 .section {
   padding: 7rem 0;
+  scroll-margin-top: 6.5rem;
 }
 
 .section__inner {
@@ -36,10 +37,6 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.15;
-}
-
-.services {
-  background: var(--color-background);
 }
 
 .services__header {

@@ -12,7 +12,7 @@ export default function App() {
         Pular para o conteúdo principal
       </a>
       <Navbar />
-      <main id="main-content">
+      <main id="main-content" className="main-surface">
         <Hero />
         <Services />
         <About />

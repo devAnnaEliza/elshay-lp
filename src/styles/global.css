@@ -38,6 +38,42 @@ a {
   min-height: 100vh;
 }
 
+.main-surface {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.main-surface::before,
+.main-surface::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+}
+
+.main-surface::before {
+  background:
+    radial-gradient(ellipse 58rem 46rem at 79% 6rem, rgb(200 169 110 / 11%), transparent 70%),
+    radial-gradient(ellipse 68rem 58rem at 16% 43%, rgb(255 255 255 / 2%), transparent 73%),
+    radial-gradient(ellipse 66rem 54rem at 78% 78%, rgb(200 169 110 / 4%), transparent 74%);
+}
+
+.main-surface::after {
+  background-image:
+    linear-gradient(90deg, rgb(200 169 110 / 6%) 1px, transparent 1px),
+    linear-gradient(rgb(200 169 110 / 4%) 1px, transparent 1px);
+  background-size: 6rem 6rem;
+  opacity: 0.32;
+}
+
+.main-surface > * {
+  position: relative;
+  z-index: 1;
+}
+
 .skip-link {
   position: fixed;
   z-index: 20;
