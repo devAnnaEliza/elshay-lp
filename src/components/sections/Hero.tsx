@@ -46,11 +46,6 @@ export function Hero() {
           </dl>
         </div>
       </div>
-
-      <div className="hero__scroll-cue" aria-hidden="true">
-        <span>Scroll</span>
-        <i />
-      </div>
     </section>
   )
 }
